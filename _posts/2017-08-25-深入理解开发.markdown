@@ -76,6 +76,9 @@ linux的yum
 
 [2022paper]({{site.baseurl}}/assets/file/2022paper.pdf)
 
+[性格分析]({{site.baseurl}}/assets/file/intj.pdf)
+
+
 ### 12·思考
 人们只会使用他们见过的熟练掌握的东西  
 编程学习的关键在于  
