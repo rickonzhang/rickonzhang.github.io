@@ -4,23 +4,23 @@
       "title"    : "I conquer the Himalayas",
       "category" : "",
       "tags"     : "Blog, Mountains",
-      "url"      : "/rickonzhang.github.io/i-conquer-the-himalayas/",
+      "url"      : "/i-conquer-the-himalayas/",
       "date"     : "2017-08-25 18:32:20 +0800"
     } ,
   
     {
-      "title"    : "I meet the sunset",
+      "title"    : "Python学习笔记",
       "category" : "",
-      "tags"     : "Blog, Sunset",
-      "url"      : "/rickonzhang.github.io/i-meet-the-sunset/",
+      "tags"     : "技术",
+      "url"      : "/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
       "date"     : "2017-08-24 18:32:20 +0800"
     } ,
   
     {
-      "title"    : "kuku",
+      "title"    : "测试文件",
       "category" : "",
       "tags"     : "Blog, Sunset",
-      "url"      : "/rickonzhang.github.io/meeting-with-adventures/",
+      "url"      : "/meeting-with-adventures/",
       "date"     : "2017-08-23 18:32:20 +0800"
     } ,
   
@@ -28,7 +28,7 @@
       "title"    : "Snowboarding and my life",
       "category" : "",
       "tags"     : "Blog, Mountains, Sport",
-      "url"      : "/rickonzhang.github.io/snowboarding-and-my-life/",
+      "url"      : "/snowboarding-and-my-life/",
       "date"     : "2017-08-22 18:32:20 +0800"
     } ,
   
@@ -36,7 +36,7 @@
       "title"    : "Time to think",
       "category" : "",
       "tags"     : "Blog, Meditation",
-      "url"      : "/rickonzhang.github.io/time-to-think/",
+      "url"      : "/time-to-think/",
       "date"     : "2017-08-21 18:32:20 +0800"
     } ,
   
@@ -44,7 +44,7 @@
       "title"    : "The forest in the fog",
       "category" : "",
       "tags"     : "Blog, Meditation",
-      "url"      : "/rickonzhang.github.io/the-forest-in-the-fog/",
+      "url"      : "/the-forest-in-the-fog/",
       "date"     : "2017-08-20 18:32:20 +0800"
     } 
   
