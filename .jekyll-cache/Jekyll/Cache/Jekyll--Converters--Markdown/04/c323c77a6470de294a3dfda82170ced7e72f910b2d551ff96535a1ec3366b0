@@ -1,6 +1,4 @@
-I"y<p>#深入理解开发</p>
-
-<h3 id="6包管理器">6·包管理器</h3>
+I"<h3 id="6包管理器">6·包管理器</h3>
 
 <p>mac的homebrew<br />
 python的pip<br />
@@ -60,7 +58,7 @@ linux的yum<br />
 从最小项开始一点一点向上排查<br />
 一定要常见的细节错误记录下来，在排查的时候要有意识保证过程的严谨，而不是因为操作和过程出现问题</p>
 
-<p><img src="/assets/img/yosh-ginsu.jpg" alt="Yosh Ginsu" /></p>
+<!--![Yosh Ginsu](/assets/img/yosh-ginsu.jpg)-->
 
 <p><a href="/assets/file/2021paper.pdf">2021paper</a></p>
 
@@ -194,7 +192,5 @@ linux的yum<br />
 <p>测试工程师<br />
 运维工程师<br />
 产品经理</p>
-
-<p><img src="/assets/img/yosh-ginsu.jpg" alt="Yosh Ginsu" /></p>
 
 :ET

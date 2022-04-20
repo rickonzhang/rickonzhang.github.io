@@ -1,15 +1,12 @@
 ---
 layout: post
 title:  深入理解开发
-date:   2017-08-25 13:32:20 +0300
+date:   2017-08-11 13:32:20 +0300
 description:  # Add post description (optional)
 img: post-1.jpg # Add image post (optional)
 tags: [技术]
 author:  # Add name author (optional)
 ---
-
-#深入理解开发
-
 ### 6·包管理器
 
 mac的homebrew  
@@ -70,7 +67,7 @@ linux的yum
 从最小项开始一点一点向上排查  
 一定要常见的细节错误记录下来，在排查的时候要有意识保证过程的严谨，而不是因为操作和过程出现问题  
 
-![Yosh Ginsu]({{site.baseurl}}/assets/img/yosh-ginsu.jpg)
+<!--![Yosh Ginsu]({{site.baseurl}}/assets/img/yosh-ginsu.jpg)-->
 
 [2021paper]({{site.baseurl}}/assets/file/2021paper.pdf)
 
@@ -206,37 +203,5 @@ web开发
 产品经理  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Yosh Ginsu]({{site.baseurl}}/assets/img/yosh-ginsu.jpg)
 
 
