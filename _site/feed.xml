@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-20T14:07:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rikon Blog</title><subtitle>多听多看多想
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-20T16:52:29+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rickon Blog</title><subtitle>多听多看多想
 </subtitle><author><name>Rickon Zhang</name></author><entry><title type="html">深入理解开发</title><link href="http://localhost:4000/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91/" rel="alternate" type="text/html" title="深入理解开发" /><published>2017-08-25T18:32:20+08:00</published><updated>2017-08-25T18:32:20+08:00</updated><id>http://localhost:4000/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91</id><content type="html" xml:base="http://localhost:4000/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91/"><![CDATA[<p>#深入理解开发</p>
 
 <h3 id="6包管理器">6·包管理器</h3>
@@ -62,6 +62,10 @@ linux的yum<br />
 一定要常见的细节错误记录下来，在排查的时候要有意识保证过程的严谨，而不是因为操作和过程出现问题</p>
 
 <p><img src="/assets/img/yosh-ginsu.jpg" alt="Yosh Ginsu" /></p>
+
+<p><a href="/assets/file/2021paper.pdf">2021paper</a></p>
+
+<p><a href="/assets/file/2022paper.pdf">2022paper</a></p>
 
 <h3 id="12思考">12·思考</h3>
 <p>人们只会使用他们见过的熟练掌握的东西<br />

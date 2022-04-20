@@ -40,4 +40,12 @@
 <url>
 <loc>http://localhost:4000/page2/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/file/2021paper.pdf</loc>
+<lastmod>2021-02-09T00:13:08+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/file/2022paper.pdf</loc>
+<lastmod>2022-02-22T00:30:29+08:00</lastmod>
+</url>
 </urlset>
