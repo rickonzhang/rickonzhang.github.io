@@ -1,0 +1,21 @@
+I"X<h1 id="机器学习笔记">机器学习笔记</h1>
+
+<h2 id="参考网站">参考网站</h2>
+<p>李宏毅机器学习笔记  <code class="language-plaintext highlighter-rouge">https://datawhalechina.github.io/leeml-notes/#/</code><br />
+吴恩达深度学习笔记  <code class="language-plaintext highlighter-rouge">https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/</code><br />
+吴恩达机器学习代码  <code class="language-plaintext highlighter-rouge">https://www.heywhale.com/home/column/5dd7524c83b6ff002c786fff</code> <br />
+easyAI 网站<code class="language-plaintext highlighter-rouge">https://easyai.tech/ai-definition-category/machine-learning/</code></p>
+
+<h2 id="机器学习分类">机器学习分类</h2>
+<p>机器利用数据学习逻辑和算法 <br />
+主要分类：</p>
+
+<ul>
+  <li>无监督：给数据，无标注，聚类问题</li>
+  <li>监督：给数据，给标注，分类或回归问题</li>
+  <li>强化：给状态，动作，奖励，获得动作策略</li>
+</ul>
+
+<p>神经网络 是基于 逻辑回归（监督学习） <br />
+深度学习 是基于 神经网络</p>
+:ET

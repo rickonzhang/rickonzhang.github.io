@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>强化学习笔记 - Rikon Blog</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Rickon Zhang</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-5.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">强化学习笔记</h1>
+          <div class="page-date"><time datetime="2017-08-21 18:32:20 +0800">2017, Aug 21</time></div>
+        </div>
+        <h1 id="强化学习笔记">强化学习笔记</h1>
+<h2 id="综述">综述</h2>
+<h3 id="背景">背景</h3>
+<p>定位：和有监督学习，无监督学习相对 <br />
+特点：无需数据集，自行尝试学习 <br />
+应用：游戏 <br />
+分类：
+有模型和无模型，区别在于智能体是否知道系统 <br />
+基于奖励 最优奖励总和 <br />
+基于策略 找到最优策略</p>
+
+<h3 id="对象">对象：</h3>
+<p>代理 环境 动作 策略 状态 奖励 目标 <br />
+设置好环境，通过状态来指导代理，代理通过马尔科夫决策过程， <br />
+做出正确动作，获得奖励，将动作执行先后顺序形成策略，达到目标结束 <br />
+自动进行决策，连续决策，最大化积累reward</p>
+
+<h3 id="决策">决策：</h3>
+<p>策略学习 详细指示 输入状态   <br />
+Q-learning 让代理自行学习 输入状态和动作</p>
+
+<h3 id="局限">局限：</h3>
+<p>数据训练量大——效率低性能差 <br />
+领域特殊性——有特定的更优方案 <br />
+奖励函数设计——主观，局部最优解</p>
+
+<h3 id="难题">难题：</h3>
+<p>无法收敛</p>
+
+<h3 id="应用">应用：</h3>
+<p>小老鼠吃奶酪</p>
+
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#技术" class="tag">| 技术</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=强化学习笔记&url=http://localhost:4000/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </div><!-- End Share -->
+        </div>
+        <section class="author-box">
+  <img src="/assets/img/adam-face.jpg" alt="Rickon Zhang" class="author-img">
+  <div class="author-desc">
+    <h2>Rickon Zhang</h2>
+    <p>热爱读书写作</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91/" class="recent-item" style="background: url(/assets/img/post-1.jpg) center no-repeat; background-size: cover;"><span>深入理解开发</span></a>
+      
+    
+      
+        <a href="/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-2.jpg) center no-repeat; background-size: cover;"><span>Python学习笔记</span></a>
+      
+    
+      
+        <a href="/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-9.jpg) center no-repeat; background-size: cover;"><span>Go学习笔记</span></a>
+      
+    
+      
+        <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/" class="recent-item" style="background: url(/assets/img/post-3.jpg) center no-repeat; background-size: cover;"><span>服务器部署</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-brown.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+  <div class="copyright">
+    <p>2022 &copy; Rickon Zhang</p>
+  </div>
+</footer> <!-- End Footer -->
+
+</div>
+
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

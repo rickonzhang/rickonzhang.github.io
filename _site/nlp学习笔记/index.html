@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>nlp学习笔记 - Rikon Blog</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Rickon Zhang</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-4.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">nlp学习笔记</h1>
+          <div class="page-date"><time datetime="2017-08-22 18:32:20 +0800">2017, Aug 22</time></div>
+        </div>
+        <h1 id="nlp学习笔记">nlp学习笔记</h1>
+<h2 id="技术类型">技术类型</h2>
+<p>语音识别ASR <br />
+自然语言理解NLU <br />
+对话管理DM <br />
+自然语言生成NLG <br />
+语音合成TTS</p>
+
+<p>NLU和DM是核心</p>
+
+<h2 id="对话系统">对话系统</h2>
+
+<p>场景：QA闲聊 <br />
+技术：文本生成，检索式闲聊，对话状态跟踪，上下文理解</p>
+
+<h3 id="方法">方法：</h3>
+<p>句法式规则 <br />
+意图+槽位 <br />
+抽象出概念并组合 <br />
+关键词</p>
+
+<p>基于检索的问答 <br />
+处理问题 <br />
+关键词 <br />
+q-q 检索召回  粗糙匹配 <br />
+q-r matching &amp;&amp; ranking 精确匹配</p>
+
+<p>基于知识图谱问答 <br />
+语义解析 <br />
+语义关联</p>
+
+<p>基于阅读理解问答 <br />
+匹配式QA <br />
+抽取式QA</p>
+
+<h2 id="具体方法技术">具体方法技术</h2>
+<h3 id="nlp处理过程">nlp处理过程</h3>
+
+<p>词法分析 <br />
+中文分词 <br />
+词性标注 <br />
+命名实体识别</p>
+
+<p>信息提取</p>
+
+<p>文本分类，聚类</p>
+
+<p>句法分析</p>
+
+<p>语义分析 <br />
+词义消歧 <br />
+语义角色标注 <br />
+语义依存分析</p>
+
+<p>语料库 <br />
+针对每一个环节都有相应的语料库</p>
+
+<h3 id="对话状态追踪dst">对话状态追踪DST</h3>
+<p>把对话过程当时一个序列模型 <br />
+记忆网络跟踪上下文</p>
+
+<h3 id="文本生成nlg">文本生成NLG</h3>
+<p>根据句法式规则 <br />
+选择+拼接</p>
+
+<h3 id="nlu">NLU</h3>
+<p>意图识别intent <br />
+实体识别entity <br />
+槽位提取——命名实体识别NER <br />
+序列标注问题</p>
+
+<h3 id="意图识别的方法">意图识别的方法</h3>
+<p>语义提取 <br />
+文本分类</p>
+
+<p>实体，概念的实例  <br />
+效果 能够提取到意图和实体</p>
+
+<h3 id="dm">DM</h3>
+<p>决策过程 <br />
+输入：语义表达 当前状态 <br />
+输出：动作或者给出回应 <br />
+功能 <br />
+决策和回复</p>
+
+<p>基于规则 <br />
+基于统计——强化学习 <br />
+基于神经网络——rasa <br />
+需要大量的数据去训练</p>
+
+<h3 id="gpt3">GPT3</h3>
+<p>是一个文本生成模型 <br />
+需要经过训练，可开发出强大的功能 <br />
+有上千亿个参数的神经网络 <br />
+输入 一个序列 <br />
+输出 序列末尾加上单词 <br />
+过程 一系列的编码（单词转换为向量），计算预测值（transformer解码层）解码（向量转换为单词）处理 <br />
+重复过程得到完整的输出 <br />
+token 单个单词 <br />
+架构是基于transformer解码器模型 <br />
+学习到的内容编码成1750亿个参数 <br />
+计算每次运行时生成的 token <br />
+预测主要就是大量的矩阵乘法 <br />
+非监督预训练和监督微调 <br />
+API完成了非监督预训练 pre-training <br />
+目标任务进行监督微调 fine-tuning</p>
+
+<h3 id="transformer">Transformer</h3>
+<p>引入了注意力机制</p>
+
+<h3 id="seq2seq">Seq2Seq</h3>
+<p>（强调目的） <br />
+特点是输入序列、输出序列</p>
+
+<h3 id="encoder-decoder-模型">Encoder-Decoder 模型</h3>
+<p>（强调方法） <br />
+输入——向量——输出 <br />
+中间向量长度固定 <br />
+压缩——解压</p>
+
+<p>Seq2Seq 属于 Encoder-Decoder <br />
+图片，文字，语音——文字</p>
+
+<h3 id="ａttention-模型">Ａttention 模型</h3>
+<p>编码为单个长度固定的向量序列</p>
+
+<h3 id="rnn">RNN</h3>
+<p>Recurrent Neural Network <br />
+循环神经网络 <br />
+有效的处理序列数据 <br />
+输入序列数据 <br />
+前面的输入会影响到后面的输出 <br />
+存在短期记忆问题 <br />
+以序列（sequence）数据为输入，在序列的演进方向进行递归（recursion）且所有节点（循环单元）按链式连接形成闭合回路的递归神经网络（recursive neural network）</p>
+
+<h3 id="lstm">LSTM</h3>
+<p>Long short-term memory <br />
+长短期记忆网络</p>
+
+<p>LSTM是RNN的优化 <br />
+GRU是LSTM的优化</p>
+
+<h3 id="推荐系统">推荐系统</h3>
+<p>不具有目的性，依赖用户的历史行为和画像数据进行个性化推荐 <br />
+本质：信息过滤系统 <br />
+方法：召回、排序、重排序 <br />
+场景： <br />
+资讯类：今日头条、腾讯新闻等 <br />
+电商类：淘宝、京东、拼多多、亚马逊等 <br />
+娱乐类：抖音、快手、爱奇艺等 <br />
+生活服务类：美团、大众点评、携程等 <br />
+社交类：微信、陌陌、脉脉等 <br />
+场景： <br />
+基于用户维度的推荐： <br />
+根据用户的历史行为和兴趣进行推荐，比如淘宝首页的猜你喜欢、抖音的首页推荐等。 <br />
+基于物品维度的推荐： <br />
+根据用户当前浏览的标的物进行推荐，比如打开京东APP的商品详情页，会推荐和主商品相关的商品给你。</p>
+
+<h3 id="embedding">Embedding</h3>
+<p>嵌入层 <br />
+将一个高维的对象表示成一个低维的向量 <br />
+方便处理对象之间的潜在关系</p>
+
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#技术" class="tag">| 技术</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=nlp学习笔记&url=http://localhost:4000/nlp%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/nlp%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/nlp%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </div><!-- End Share -->
+        </div>
+        <section class="author-box">
+  <img src="/assets/img/adam-face.jpg" alt="Rickon Zhang" class="author-img">
+  <div class="author-desc">
+    <h2>Rickon Zhang</h2>
+    <p>热爱读书写作</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91/" class="recent-item" style="background: url(/assets/img/post-1.jpg) center no-repeat; background-size: cover;"><span>深入理解开发</span></a>
+      
+    
+      
+        <a href="/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-2.jpg) center no-repeat; background-size: cover;"><span>Python学习笔记</span></a>
+      
+    
+      
+        <a href="/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-9.jpg) center no-repeat; background-size: cover;"><span>Go学习笔记</span></a>
+      
+    
+      
+        <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/" class="recent-item" style="background: url(/assets/img/post-3.jpg) center no-repeat; background-size: cover;"><span>服务器部署</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-brown.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+  <div class="copyright">
+    <p>2022 &copy; Rickon Zhang</p>
+  </div>
+</footer> <!-- End Footer -->
+
+</div>
+
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

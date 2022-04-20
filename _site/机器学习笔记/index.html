@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>机器学习笔记 - Rikon Blog</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Rickon Zhang</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-6.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">机器学习笔记</h1>
+          <div class="page-date"><time datetime="2017-08-20 18:32:20 +0800">2017, Aug 20</time></div>
+        </div>
+        <h1 id="机器学习笔记">机器学习笔记</h1>
+
+<h2 id="参考网站">参考网站</h2>
+<p>李宏毅机器学习笔记  <code class="language-plaintext highlighter-rouge">https://datawhalechina.github.io/leeml-notes/#/</code><br />
+吴恩达深度学习笔记  <code class="language-plaintext highlighter-rouge">https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/</code><br />
+吴恩达机器学习代码  <code class="language-plaintext highlighter-rouge">https://www.heywhale.com/home/column/5dd7524c83b6ff002c786fff</code> <br />
+easyAI 网站<code class="language-plaintext highlighter-rouge">https://easyai.tech/ai-definition-category/machine-learning/</code></p>
+
+<h2 id="机器学习分类">机器学习分类</h2>
+<p>机器利用数据学习逻辑和算法 <br />
+主要分类：</p>
+
+<ul>
+  <li>无监督：给数据，无标注，聚类问题</li>
+  <li>监督：给数据，给标注，分类或回归问题</li>
+  <li>强化：给状态，动作，奖励，获得动作策略</li>
+</ul>
+
+<p>神经网络 是基于 逻辑回归（监督学习） <br />
+深度学习 是基于 神经网络</p>
+
+<h2 id="ai层级">AI层级</h2>
+<p>基础：数据和硬件算力 <br />
+算法：机器学习和深度学习的相关算法 <br />
+方向：CV，NLP，语音，决策，搜索 <br />
+具体：机器翻译，语义理解 <br />
+方案：智能安防</p>
+
+<h2 id="简单代码流程">简单代码流程</h2>
+<p>1·读取数据 <br />
+2·矩阵化和标准化处理 <br />
+3·算法函数 <br />
+4·设置参数的初始值 <br />
+5·代入计算结果 <br />
+6·可视化展示</p>
+
+<h2 id="决策树">决策树</h2>
+
+<p>信息熵 <br />
+不确定程度 <br />
+可能的不确定度的期望 <br />
+对概率进行映射 <br />
+满足非负，连续，独立事件概率相乘不确定度相加</p>
+
+<p>三个性质作为不确定度 <br />
+-log（p）采用负对数</p>
+
+<p>不确定度的期望是，不确定度乘概率求和 <br />
+（事件的期望是 事件乘概率求和）</p>
+
+<p>一个事件拆解成不同事件 <br />
+求所有事件的不确定度的期望 <br />
+便能衡量事件的信息量的大小</p>
+
+<p>直观感受是事件的发生的概率越小 <br />
+H的值越大说明信息越多 <br />
+H值越小说明更加确定 <br />
+差值是条件改变产生的信息量 <br />
+H可以直接量化信息</p>
+
+<p>先将事件理解成一个概率分布的问题 <br />
+不确定度就是分布情况的复杂度 <br />
+熵最小时是完全确定的状态</p>
+
+<p>对于二叉树而言 <br />
+给出样本的属性	 <br />
+机器要做的是 <br />
+1·将属性设定先后 <br />
+2·找到阈值 <br />
+比较不同属性正确率 <br />
+尽可能提高正确率 <br />
+这个过程就是减小熵</p>
+
+<p>熵：随机变量的不确定度 <br />
+条件熵：一个条件下 随机变量的不确定度 <br />
+信息增益：熵-条件熵 <br />
+不确定性的减少程度，即为我们带来了多少有用信息</p>
+
+<p>举例解释
+X(明天下雨)是一个随机变量，X的熵可以算出来， Y(明天阴天)也是随机变量，在阴天情况下下雨的信息熵我们如果也知道的话（此处需要知道其联合概率分布或是通过数据估计）即是条件熵。X的熵减去Y条件下X的熵，就是信息增益。具体解释：原本明天下雨的信息熵是2，条件熵是0.01（因为如果知道明天是阴天，那么下雨的概率很大，信息量少），这样相减后为1.99。在获得阴天这个信息后，下雨信息不确定性减少了1.99，不确定减少了很多，所以信息增益大。也就是说，阴天这个信息对明天下午这一推断来说非常重要。所以在特征选择的时候常常用信息增益，如果IG（信息增益大）的话那么这个特征对于分类来说很关键，决策树就是这样来找特征的。</p>
+
+<p>选信息增益最大的特征作为根节点 <br />
+特征选择 选取具有分类能力的属性 <br />
+决策树生成 选择特征作为节点，然后将取值作为子节点，直到特征被用完 <br />
+决策树剪枝 对抗过拟合，预剪枝，后剪枝，然后对比和原来的效果</p>
+
+<h2 id="支持向量机">支持向量机</h2>
+<p>SVM <br />
+具体的推导过于抽象难以理解 <br />
+包含的参数有 支持向量x，超平面，间隔d <br />
+目标函数是最大化边距 <br />
+即最优超平面</p>
+
+<p>通过目标函数和约束条件进行化简 <br />
+通过对偶问题和核技巧和SMO得到W和b</p>
+
+<h2 id="学习经验">学习经验</h2>
+<p>理解整体的含义 <br />
+像代价函数，BP等底层算法 <br />
+无需过多关注细节</p>
+
+<p>无需过度关注算法和实现细节 <br />
+只需要明白算法的架构和原理</p>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#技术" class="tag">| 技术</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=机器学习笔记&url=http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </div><!-- End Share -->
+        </div>
+        <section class="author-box">
+  <img src="/assets/img/adam-face.jpg" alt="Rickon Zhang" class="author-img">
+  <div class="author-desc">
+    <h2>Rickon Zhang</h2>
+    <p>热爱读书写作</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%BC%80%E5%8F%91/" class="recent-item" style="background: url(/assets/img/post-1.jpg) center no-repeat; background-size: cover;"><span>深入理解开发</span></a>
+      
+    
+      
+        <a href="/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-2.jpg) center no-repeat; background-size: cover;"><span>Python学习笔记</span></a>
+      
+    
+      
+        <a href="/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-9.jpg) center no-repeat; background-size: cover;"><span>Go学习笔记</span></a>
+      
+    
+      
+        <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/" class="recent-item" style="background: url(/assets/img/post-3.jpg) center no-repeat; background-size: cover;"><span>服务器部署</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-brown.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+  <div class="copyright">
+    <p>2022 &copy; Rickon Zhang</p>
+  </div>
+</footer> <!-- End Footer -->
+
+</div>
+
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
