@@ -1,16 +1,13 @@
 ---
 layout: post
 title:  如何认识问题
-date:   2017-07-24 13:32:20 +0300
+date:   2022-01-24 13:32:20 +0300
 description:   # Add post description (optional)
 img: post-12.jpg # Add image post (optional)
 tags: [文集]
 author: # Add name author (optional)
 ---
-
-&ensp;&ensp;&ensp;&ensp;
 <center><big><b>知识的分类</b></big></center>
-
 
 &ensp;&ensp;&ensp;&ensp;如何评价一个人有没有知识，首先要明确知识的定义，我愿意把知识分为三个部分，其重要性的比例为：6：3：1。
 

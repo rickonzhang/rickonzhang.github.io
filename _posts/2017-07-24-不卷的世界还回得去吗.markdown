@@ -5,8 +5,9 @@ date:   2017-07-24 13:32:20 +0300
 description:   # Add post description (optional)
 img: post-11.jpg # Add image post (optional)
 tags: [文集]
-author: 转载# Add name author (optional)
+author: 转载  # Add name author (optional)
 ---
+此文为转载
 
 &ensp;&ensp;&ensp;&ensp;当我们这代人借着国运终于能“平视”西方世界的时候，此时最大的愿望，大概是“不卷”。
 
