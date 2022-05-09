@@ -1,0 +1,14 @@
+---
+layout: post
+title: 数学建模
+date: 2017-08-20 13:32:20 +0300
+description:  # Add post description (optional)
+img: post-16.jpg # Add image post (optional)
+tags: [学科笔记]
+author: # Add name author (optional)
+---
+<center><big><b>美赛经验</b></big></center>
+
+&ensp;&ensp;&ensp;&ensp;我参加了两次的美赛，2021年拿到了H奖，2022年拿到了F奖。
+
+![2021]({{site.baseurl}}/assets/img/pic1.png) ![2022]({{site.baseurl}}/assets/img/pic2.png)
