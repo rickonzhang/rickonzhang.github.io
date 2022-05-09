@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>如何深入软件开发 - Rickon Blog</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Rickon Zhang</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-15.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">如何深入软件开发</h1>
+          <div class="page-date"><time datetime="2017-08-20 18:32:20 +0800">2017, Aug 20</time></div>
+        </div>
+        <p>    如何成为一名高级软件工程师，或是发展成为架构师和技术总监，这是每个软件开发人员都很关注的问题。下面是我对于软件开发职业发展的思考和想法。
+成为高级工程师，那么在自身的开发技术上需要更加精进。</p>
+
+<p>    优秀的代码应该是可读性非常强的代码。写代码的风格没有特别强制的限制，每一个人都有自己的写法，那么一百个人就会有一百种代码的风格和方式，这就不同的人在接触同一套代码的时候，相互很难看懂对方写的内容。因此如何能让对方看懂，代码的注释性和可读性就显得尤为重要。代码的艺术性就来源于它解决问题的清晰的逻辑。这就像在高中做数学题一样，好的方法有时候并非是看起来最巧妙的奇淫巧技，而是按部就班，逻辑清晰的解决方案。因为常规方法不仅普适性强，而且考虑问题也很全面，更加可靠。之前在实习的过程中一直奇怪，为什么相比之下Python不适合作为工程项目的代码？Python的语言特性不是很灵活吗？组里的工程师说就是由于过于灵活，因此不适合。这既是他的优点，也是它的不足，优点在于它的写法足够灵活，每次你想到一种写法，甚至是你臆想出来的写法，它可能都是成立的。但是这就导致它缺少规范，可读性会变差。写代码也同样是如此，优秀的代码具有较好的规范性和可读性，可读性高的代码甚至不需要注释，任何一个掌基础握语法的初学者都可以看懂软件的逻辑，这就能让代码的通用性大大提高。</p>
+
+<p>    优秀的代码应该有较强的健壮性。相比于简单的项目来说，成熟的项目里百分之六十以上的代码解决的是实际中很少出现的情况。因为一旦软件部署到实际的应用环境中，投入使用以后。出现任何小的错误都会造成严重的损失，而且修改起来也会很麻烦。因此要尽可能保证在开发的过程中，提前考虑到各种各样的极端情况，以保证软件运行的稳定性。这就意味着要为代码增加大量的容错机制。而究竟会出现什么样的问题，出现的问题都该如何避免和解决，这些都是在实际的项目中积累出的经验，也是高级工程师需要关注的问题，而不再只是关注正常情况下软件的运行情况。</p>
+
+<p>    代码和性能指标在高级开发中需要被关注。在独立小项目的时候，性能和软件的反应时间不会有太大的影响，但在软件的复杂度和规模上升以后，软件的架构就会产生非常大的影响，普通的项目和复杂的项目，几乎是完全两种项目。在一些对即时交互有较高要求的需求中，反应时间较慢的影响往往是致命的。在这个时候，语言的性能，还有框架的性能，都会成为重要的指标。如何让软件性能满足需求就是需要考虑的问题。</p>
+
+<p>    在拥有了一定的项目经验和编写风格之后，就拥有了通用的技术能力和经验。但是大部分的项目软件都是按照需求特别开发的，通用的项目很少，因此，面对新的需求和新的情境，还要能够进行创新，解决疑难问题，研发出新的技术和产品。除了通用的网页开发能力，高级工程师还应该有自己的技术方向。软件开发其实有很多的分类，包括各种应用级软件，还有一些技术平台如大数据，云计算平台等。不同的研究方向涉及到的工具和技术也是不完全相同的。这就对研发能力提出了较高的要求。如何将创新的技术概念，从理论转化为实际，如何去开发出更高效更实用的工具和模式。不断深入的开发会对技术的能力提出巨大的要求。</p>
+
+<p>    成为高级工程师，还需要有一定的项目管理能力。
+项目管理的流程包括需求分析，文档书写，架构设计，还有分工合作交流等内容。这些看似与写代码无关，但是却深刻地影响着写代码的效率和质量。这也是为什么平时看互联网公司很多的日常都是在开会，而且开会的时间甚至远远超过真正写代码的时间。高质量的项目中，代码开发只占一部分，需求的理解和文档的书写同样重要。敏捷开发的要义是，先做起来，在迭代中改进，但在前期的设计和需求评估阶段，如果能将问题都考虑比较周全，将使得整个实施的过程更加的清晰简洁，因此项目管理的能力也很重要。
+在互联网公司中，经常会有管理岗和技术岗之分。而管理岗通常进行的就是项目管理。高级工程师的一个特点就是它不仅可以自己单兵作战，而且可以对团队作战进行管理。高级工程师的职业发展方向有两种选择，一种是在技术上深耕，一种是转为管理人员。技术的发展目标更多是成为一名架构师，管理的发展目标是成为团队的研发总监。那么这些职位究竟日常工作在做什么？又有什么要求？下面是我根据所见所得的一些思考。</p>
+
+<p>    这两者要求的共同点是技术的沉淀，两种职位的基础肯定是高级工程师，有完整的项目经验。区别在于对于架构师的要求在于参与技术选型，即用最合适的技术选型来最高效解决问题。没有哪一种语言和架构是完美的，不同的选择有不同的特点和其适合的情境，根据需求将业务抽象化，选择更合适的方式，更熟悉的方式来搭建起项目的框架是架构师应该做的事情。</p>
+
+<p>    对于总监来说是沟通和项目管理能力。很多时候一个人是没有办法将所有技术面面俱到的，管理者同样也如此。总监需要有经验，但并不一定是开发最熟练的。在大量的时间用于管理以后，写代码的熟练度必然会下降，更不用说在这个不进则退的环境中。总监的职责更重要的是在遇到一个新的项目时，如何将所有人的经验发挥出来，让更擅长此类项目的人来负责相应的部分。在开发中同样拥有短板效应。选型应该让所有参与开发的人员都能理解且接受。管理者也需要让所有人都知道自己干什么和怎么干。这样的沟通能力是总监必不可少的能力。项目管理上团队可能要同时面对多条业务线，因此总监需要进行项目的排期和进度监管，承担一定的压力来保证任务按时交付，这非常考验管理者的能力。</p>
+
+<p>    成为一名高级的软件工程师要在实现业务功能的基础上更加关注代码的可读性，健壮性和性能方面，提升项目管理的能力。在职业发展方面，技术上关注技术的选型和架构，管理方面提高与人沟通能力，多提高自己的不可替代性，如此便能更好地在技术道路上长远走下去。</p>
+
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#技术思考" class="tag">| 技术思考</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=如何深入软件开发&url=http://localhost:4000/%E5%A6%82%E4%BD%95%E6%B7%B1%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E5%A6%82%E4%BD%95%E6%B7%B1%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/%E5%A6%82%E4%BD%95%E6%B7%B1%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </div><!-- End Share -->
+        </div>
+        <section class="author-box">
+  <img src="/assets/img/adam-face.jpg" alt="Rickon Zhang" class="author-img">
+  <div class="author-desc">
+    <h2>Rickon Zhang</h2>
+    <p>热爱读书写作</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E9%97%AE%E9%A2%98/" class="recent-item" style="background: url(/assets/img/post-12.jpg) center no-repeat; background-size: cover;"><span>如何认识问题</span></a>
+      
+    
+      
+        <a href="/%E7%94%9F%E6%B4%BB%E7%9A%84%E6%84%8F%E4%B9%89%E5%9C%A8%E4%BA%8E%E7%94%9F%E6%B4%BB%E6%9C%AC%E8%BA%AB/" class="recent-item" style="background: url(/assets/img/post-10.jpg) center no-repeat; background-size: cover;"><span>生活的意义在于生活本身</span></a>
+      
+    
+      
+        <a href="/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-2.jpg) center no-repeat; background-size: cover;"><span>Python学习笔记</span></a>
+      
+    
+      
+        <a href="/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-9.jpg) center no-repeat; background-size: cover;"><span>Go学习笔记</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-brown.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+  <div class="copyright">
+    <p>2022 &copy; Rickon Zhang</p>
+  </div>
+</footer> <!-- End Footer -->
+
+</div>
+
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
