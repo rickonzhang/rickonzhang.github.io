@@ -11,4 +11,7 @@ author: # Add name author (optional)
 
 &ensp;&ensp;&ensp;&ensp;我参加了两次的美赛，2021年拿到了H奖，2022年拿到了F奖。
 
-![2021]({{site.baseurl}}/assets/img/pic1.png) ![2022]({{site.baseurl}}/assets/img/pic2.png)
+![2021]({{site.baseurl}}/assets/img/pic1.png=100x20) ![2022]({{site.baseurl}}/assets/img/pic2.png)
+
+<img src="{{site.baseurl}}/assets/img/pic1.png" width = "300" height = "200" alt="2021"  />
+<img src="{{site.baseurl}}/assets/img/pic2.png" width = "300" height = "200" alt="2022"  />
