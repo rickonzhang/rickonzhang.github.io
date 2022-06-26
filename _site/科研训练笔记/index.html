@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>科研训练笔记 - Rickon Blog</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Rickon Zhang</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-17.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">科研训练笔记</h1>
+          <div class="page-date"><time datetime="2017-08-20 18:32:20 +0800">2017, Aug 20</time></div>
+        </div>
+        <p>本篇笔记基于我在大三学年完成的大创项目。本次的项目为机器学习中图像识别方面的小样本问题的科研训练，我们根据本次的项目总结出了初步接触科研的入门流程，完成了初步的项目过程报告。</p>
+
+<h1 id="学习方法报告">学习方法报告</h1>
+
+<h2 id="序言">序言</h2>
+<p>科研和本科学习考试的区别：研究生阶段的主线是自主学习，自己要给自己设定目标，对于基础知识来说，是找到相应的课程进行学习练习和巩固，对于专业知识来说，是找到对应领域的论文，阅读理解其中的方法。科学技术的发展本质上是发现问题，解决问题的过程，脑海中装着一个领域的主线，然后是发现可以改进的地方，并加以创新，创新也不是凭空而来的，也是根据大量的积累，知识方法的迁移。而本科阶段在于学习安排好的科目，并且做习题在考试中取得高分。</p>
+
+<p>人工智能相关研究种类繁杂，细分方向众多，算法对数学基础有一定要求，初次接触及机器学习项目很难触及核心内容，更多是对科研流程的了解和简单学习调整模型框架。在初次的训练中学习应该是主要的任务，科学的学习流程和清晰的任务目标是学习质量的保证。</p>
+
+<h2 id="学习方法理论">学习方法理论</h2>
+
+<h3 id="科学的学习流程">科学的学习流程</h3>
+<ul>
+  <li>目标拆解： 要做什么，达到什么样的程度，分成哪几个步骤</li>
+  <li>具体流程： 看哪个视频，看哪篇论文，看哪本书，跑哪个代码，先干什么后干什么</li>
+  <li>时间管理： 分为哪几个阶段，先干什么后干什么，每部分大概要花多少时间</li>
+</ul>
+
+<p>可以从四个方面来考虑</p>
+
+<ul>
+  <li>学习方向：需要学习什么？</li>
+  <li>学习深度：学习到什么程度，如何考察？</li>
+  <li>学习方法：怎么学习，看书看视频？</li>
+  <li>学习时间：需要多长时间</li>
+</ul>
+
+<h4 id="学习方向">学习方向</h4>
+<p>明确需要学习的知识方向
+比如</p>
+
+<ul>
+  <li>项目的技术架构涉及哪些技术方向？</li>
+  <li>FSL属于机器学习，那需要学习深度学习吗，需要学习各种复杂的神经网络吗？</li>
+  <li>FSL属于元学习，需要学习元学习吗？</li>
+  <li>FSL用到的是哪种算法，基于度量的，还是基于优化的？</li>
+  <li>基于度量的又有几种算法，需要学习哪一种？</li>
+  <li>需要学习cv图像识别的相关知识吗，需要的话要学习哪个方面？</li>
+  <li>需要学习pytorch还是tensflow？</li>
+  <li>关于代码，我们一共需要跑多少论文的代码？最后的代码是用哪一篇？</li>
+</ul>
+
+<h4 id="学习深度">学习深度</h4>
+<p>明确可以量化的考察标准</p>
+
+<p>基础的缺失：对于机器学习是零基础，学习和理解相关概念需要花费很多时间，因此要明确学习到什么程度
+比如</p>
+
+<ul>
+  <li>对于每个知识方向，需要理解到多深的程度</li>
+  <li>是能够理解概念，还是了解原理，还是能记住公式，还是能推导公式？</li>
+  <li>对于代码来说，达到怎么样的程度</li>
+  <li>是能成功地运行代码，还是能读懂代码的内容，最后的代码是在别人的基础上改还是自己写？</li>
+</ul>
+
+<h4 id="学习方法">学习方法</h4>
+<p>切实可行的高效方法
+比如</p>
+
+<ul>
+  <li>是否需要系统学习某一门课，需要掌握其中的公式推导吗，需要完成代码练习吗，是必要的吗？</li>
+  <li>对于每个方向的知识，学习的方法是什么？网课？书籍？代码？博客？哪个应该作为主要的方式？</li>
+  <li>对于代码的练习，该如何学习？阅读中文文档？看相关课程？靠百度搜索解决问题吗？需要先从简单的项目开始理解吗？</li>
+</ul>
+
+<p>考虑到初学者缺乏基础，项目却是很细化的分支和方向，所以往往很难把握知识的方向和流程，会极大影响效率</p>
+
+<h4 id="学习时间">学习时间</h4>
+<p>必要性：明确阶段性任务，确保按时推进
+时间的有限：一个项目的时间是有限的，不可能面面俱到，在目标不明确的情况下难以抓住主要矛盾，因此需要明确各个具体任务的时间点</p>
+
+<p>一个项目的完整过程大概是十个月的时间
+这十个月应该如何划分？
+每个阶段的任务是那些？
+比如：基础学习——看论文——跑代码——改代码——写论文</p>
+
+<p>需要确定分段任务和时间节点</p>
+
+<h3 id="项目学习思路">项目学习思路</h3>
+
+<h4 id="主要思路">主要思路</h4>
+<ol>
+  <li>以论文学习为主,视频课/书籍为辅。</li>
+  <li>FSL是机器学习,也会用到深度学习。(以CNN为主,CNN的网络架构/网络优化/训练机制/代码实现)</li>
+  <li>域适应的小样本图像分类研究,此次项目是做基于度量学习的,</li>
+  <li>因为时间有限,学习应该是以论文为主,用到那块知识查找资料进行补充。有3块内容的论文来学习:
+1)基于度量的小样本图像分类方法研究(了解小样本学习的基础知识,包括基础网络模型,训练测试的机制)
+2)域自适应的图像分类方法研究现状
+需要做调研,做好分类,且列好有那些文章,主要方法是什么,做略读,发表在哪,主要列顶会顶刊)。
+3)域自适应的小样本图像分类的研究现状,同(2)</li>
+  <li>代码, pytorch,选取了两篇文章的代码为主,复现实验结果,学会调试并且弄懂(可以实现改动代码),从数据输入，模型的构成,到网络的优化,结果的输岀,是什么样的流程。完全弄懂,后边用到的都差别不大。项目也主要是在现有的代码上进行修改</li>
+</ol>
+
+<h3 id="具体流程">具体流程</h3>
+<p>分为论文和代码进行学习</p>
+
+<ol>
+  <li>以阅读论文为主,从上边列岀的三块内容来论文阅读,第一步:略读,梳理这三块的发展研究现状,
+做调研,做好分类,且列好有那些文章,方法是什么,解决的问题是什么,做略读,列好发表在哪,主要列出顶会顶刊。第二步,精读个别文章。第三步,找问题,对现有的域自适应的小样本图像分类方法的改进,提出新的模型,并实现</li>
+  <li>代码调试,从基本的代码开始。 按照上面的代码部分的要求完成。</li>
+</ol>
+
+<h1 id="项目过程">项目过程</h1>
+
+<p>小样本问题是当今机器学习图像识别领域的热门问题。现实世界中图像获取的复杂性和困难程度，经常会导致某类图像样本总量过少或不同类别之间图像样本数量的不平衡，即图像的小样本问题。</p>
+
+<p>如何借鉴已有的源域数据，构建公共特征子空间和域迁移学习，实现泛化能力强的开放式识别框架，提高小样本图像域泛化性能，这对进一步丰富小样本图像识别领域的理论与方法有重要意义，也是我们此项研究的目标。</p>
+
+<p>常见的基于度量的小样本方法是采用元学习的方法，即经过完整的预训练微调过程训练得到拥有学习能力的模型。通过域自适应的方法，在特征空间中找到度量准则，使得源域和目标域数据的特征分布尽量接近，从而实现判别器的迁移使用。</p>
+
+<p>在此次的项目中，我们首先进行了基础知识的学习，对于机器学习的基础知识有了一定的认识。学习了吴恩达和李宏毅的机器学习课程，学习了深度学习和CV的相关课程，阅读了西瓜书，对相关的代码练习进行了复现。我们将Pytorch框架分模块进行学习，并将代码分析总结整理成笔记，方便后续查阅学习。我们粗略阅读一些小样本和域自适应的论文后，进行了一个分类整理，来了解目前小样本和域自适应的研究方法和进展，也为我们的方法进行创新提供思路。</p>
+
+<p>我们更深入地学习了Pytorch框架。在完成机器学习实验或项目时，为了得到最优的模型结果，程序都需要实现以下几个功能：模型定义，数据处理和加载，训练模型，训练过程的可视化，测试。我们决定此次从数据的处理和加载进行优化。为完成本项目，我们略读了几篇相关的论文，最后选取了两篇论文。思路是尝试将Meta-Transfer Learning的思想融入
+Cross-Domain Few-Shot Classification Via Learned  Feature-Wise Transformation的模型中</p>
+
+<p>在迁移学习中，HT meta-batch 训练的思想是摘选出训练失败的案例，然后利用他们来增加模型的鲁棒性。
+在train（为了训练base-learner） 和 test 时，一般的机器学习是对每一个batch中的5_way图像数据样本整体计算准确率，而hard task的改进中是对5_way中分别计算5个准确率，抽取其中准确率中最低的样本出来。多次抽取后resample一个harder task重新进行训练。
+总结下来可以理解为针对训练中准确率较低的样本，集中后再次重复训练以提高模型的准确率。</p>
+
+<p>我们考虑将迁移学习的 meta transfer learning 中的 HT meta-batch 方法应用到小样本学习的数据抽取阶段，在进行task的分类时将准确率低的样本组抽出来，集中训练得到了一定的优化效果。</p>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#学科笔记" class="tag">| 学科笔记</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=科研训练笔记&url=http://localhost:4000/%E7%A7%91%E7%A0%94%E8%AE%AD%E7%BB%83%E7%AC%94%E8%AE%B0/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E7%A7%91%E7%A0%94%E8%AE%AD%E7%BB%83%E7%AC%94%E8%AE%B0/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/%E7%A7%91%E7%A0%94%E8%AE%AD%E7%BB%83%E7%AC%94%E8%AE%B0/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </div><!-- End Share -->
+        </div>
+        <section class="author-box">
+  <img src="/assets/img/adam-face.jpg" alt="Rickon Zhang" class="author-img">
+  <div class="author-desc">
+    <h2>Rickon Zhang</h2>
+    <p>热爱读书写作</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E9%97%AE%E9%A2%98/" class="recent-item" style="background: url(/assets/img/post-12.jpg) center no-repeat; background-size: cover;"><span>如何认识问题</span></a>
+      
+    
+      
+        <a href="/%E7%94%9F%E6%B4%BB%E7%9A%84%E6%84%8F%E4%B9%89%E5%9C%A8%E4%BA%8E%E7%94%9F%E6%B4%BB%E6%9C%AC%E8%BA%AB/" class="recent-item" style="background: url(/assets/img/post-10.jpg) center no-repeat; background-size: cover;"><span>生活的意义在于生活本身</span></a>
+      
+    
+      
+        <a href="/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-2.jpg) center no-repeat; background-size: cover;"><span>Python学习笔记</span></a>
+      
+    
+      
+        <a href="/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="recent-item" style="background: url(/assets/img/post-9.jpg) center no-repeat; background-size: cover;"><span>Go学习笔记</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-brown.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+  <div class="copyright">
+    <p>2022 &copy; Rickon Zhang</p>
+  </div>
+</footer> <!-- End Footer -->
+
+</div>
+
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
