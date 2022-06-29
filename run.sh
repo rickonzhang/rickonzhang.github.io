@@ -6,4 +6,4 @@ git commit -a -m "commit"
 
 git push origin gh-pages
 
-jekyll serve
+# jekyll serve
